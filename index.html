@@ -1,0 +1,555 @@
+<!doctype html>
+<!--
+  DentaPro Academy: single-page landing (sample project)
+  Design:      Dental Home, Figma Community. Add the designer's name and link here after checking the file's license.
+  Development: Your name here
+  Stack:       HTML, CSS, Bootstrap 5.3, vanilla JS
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DentaPro Academy | Hands-on education for the whole dental team</title>
+  <meta name="description" content="One-day, hands-on dental courses in Cairo and Alexandria for dentists, hygienists, and practice managers. Groups of 16 or fewer, real cases, and take-home templates.">
+  <meta name="theme-color" content="#1C2D53">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-root-margin="0px 0px -60%" tabindex="0">
+  <a class="skip-link visually-hidden-focusable" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" id="siteNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>DentaPro Academy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn-outline-accent" href="#register">Register now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>Education for the entire dental team.</h1>
+            <p class="hero-lead">One-day courses in implant surgery, restorative dentistry, and practice management. Small groups, real cases, and templates you can use at your practice the next morning.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-accent btn-lg" href="#register">Register now</a>
+              <a class="btn btn-outline-light btn-lg" href="#events">See upcoming events</a>
+            </div>
+            <p class="hero-next">Next course: Implant Placement Masterclass, Saturday, October 24 in Cairo.</p>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint d-none d-lg-flex" href="#about" aria-label="Scroll to the About section">
+        <span>Scroll down</span>
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal reveal--left">
+            <div class="media media--portrait">
+              <img src="images/about.jpg" alt="A dentist practicing on a training model during a workshop" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-7 reveal reveal--right">
+            <h2>Training built around real clinical work</h2>
+            <p>DentaPro Academy runs one-day courses for dental teams in Cairo and Alexandria. Every attendee practices on models, plans real cases with an instructor, and leaves with checklists and templates to use at the practice the next morning.</p>
+            <p>Our instructors are practicing specialists, so you learn the techniques and routines they use with patients every week.</p>
+            <ul class="checklist about-list">
+              <li>Groups of 16 or fewer, so everyone gets time with the instructor.</li>
+              <li>A morning of case discussion, then an afternoon of hands-on practice on models.</li>
+              <li>Lunch, a printed workbook, and a certificate of attendance are included.</li>
+              <li>You take home checklists and templates for your own practice.</li>
+            </ul>
+            <a class="btn btn-outline-navy" href="#topics">See the program</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UPCOMING EVENTS ============ -->
+    <section class="section section-navy" id="events">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <h2>Upcoming events</h2>
+            <p class="section-lead">One-day courses in Cairo and Alexandria. Each includes lunch, a course workbook, and a certificate of attendance.</p>
+          </div>
+          <a class="btn btn-outline-light" href="#register">Get event updates</a>
+        </div>
+
+        <div class="row g-4" data-stagger>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="event-card">
+              <div class="media media--wide">
+                <img src="images/event-1.jpg" alt="Dentist and assistant treating a patient" loading="lazy">
+              </div>
+              <div class="event-body">
+                <time class="event-date" datetime="2026-10-24">Saturday, Oct 24, 2026</time>
+                <h3>Implant Placement Masterclass</h3>
+                <p>Practice flap design, bone grafting, sinus elevation, and implant placement on models, then plan two real cases with the instructor.</p>
+                <ul class="event-meta">
+                  <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Cairo</li>
+                  <li><i class="bi bi-clock" aria-hidden="true"></i> 9:00 am to 5:00 pm</li>
+                  <li><i class="bi bi-people" aria-hidden="true"></i> 16 seats</li>
+                  <li><i class="bi bi-cash-stack" aria-hidden="true"></i> EGP 5,500</li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted-2">Speakers</span>
+                  <span class="visually-hidden">Dr. Layla Hassan and Dr. Omar Nabil</span>
+                  <span class="avatar-stack" aria-hidden="true"><span>LH</span><span>ON</span></span>
+                </div>
+              </div>
+              <div class="event-links">
+                <a href="#register">Register now <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <a href="#topics">Learn more</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="event-card">
+              <div class="media media--wide">
+                <img src="images/event-2.jpg" alt="Two dental professionals reviewing a case together" loading="lazy">
+              </div>
+              <div class="event-body">
+                <time class="event-date" datetime="2026-11-14">Saturday, Nov 14, 2026</time>
+                <h3>Digital Dentistry Workshop</h3>
+                <p>Follow a full scan-to-restoration workflow, from intraoral scanning to design basics, and learn which digital tools are worth buying for a small practice.</p>
+                <ul class="event-meta">
+                  <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Alexandria</li>
+                  <li><i class="bi bi-clock" aria-hidden="true"></i> 9:00 am to 5:00 pm</li>
+                  <li><i class="bi bi-people" aria-hidden="true"></i> 16 seats</li>
+                  <li><i class="bi bi-cash-stack" aria-hidden="true"></i> EGP 4,500</li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted-2">Speakers</span>
+                  <span class="visually-hidden">Dr. Sara Adel and Dr. Layla Hassan</span>
+                  <span class="avatar-stack" aria-hidden="true"><span>SA</span><span>LH</span></span>
+                </div>
+              </div>
+              <div class="event-links">
+                <a href="#register">Register now <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <a href="#topics">Learn more</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="event-card">
+              <div class="media media--wide">
+                <img src="images/event-3.jpg" alt="Smiling dental hygienist in scrubs" loading="lazy">
+              </div>
+              <div class="event-body">
+                <time class="event-date" datetime="2026-12-05">Saturday, Dec 5, 2026</time>
+                <h3>Practice Management Summit</h3>
+                <p>Learn to present treatment plans so patients understand them, set up referral tracking, and run a morning huddle your whole team will actually use.</p>
+                <ul class="event-meta">
+                  <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Cairo</li>
+                  <li><i class="bi bi-clock" aria-hidden="true"></i> 9:00 am to 5:00 pm</li>
+                  <li><i class="bi bi-people" aria-hidden="true"></i> 16 seats</li>
+                  <li><i class="bi bi-cash-stack" aria-hidden="true"></i> EGP 3,800</li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted-2">Speakers</span>
+                  <span class="visually-hidden">Dr. Karim Fawzy and Dr. Sara Adel</span>
+                  <span class="avatar-stack" aria-hidden="true"><span>KF</span><span>SA</span></span>
+                </div>
+              </div>
+              <div class="event-links">
+                <a href="#register">Register now <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <a href="#topics">Learn more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM TOPICS ============ -->
+    <section class="section" id="topics">
+      <div class="container">
+        <div class="section-head text-center mx-auto">
+          <h2>Program topics</h2>
+          <p class="section-lead mx-auto">Every course draws from these five areas. Choose the ones that match your role.</p>
+        </div>
+
+        <div class="topic-grid reveal">
+          <div class="topic-cell">
+            <h3>Surgeons</h3>
+            <ul class="checklist">
+              <li>Bone grafting</li>
+              <li>Implant placement</li>
+              <li>Sinus elevation</li>
+              <li>Soft-tissue regeneration</li>
+              <li>Treatment planning</li>
+            </ul>
+          </div>
+
+          <div class="topic-cell topic-cell--wide">
+            <h3>Restorative</h3>
+            <ul class="checklist checklist--2col">
+              <li>Implant restorative dentistry</li>
+              <li>Digital dentistry</li>
+              <li>Aesthetics</li>
+              <li>Full-arch implant restorations</li>
+              <li>Transitioning teeth to implants</li>
+              <li>Managing complications</li>
+              <li>Occlusion</li>
+              <li>Screw-retained vs. cement-retained restorations</li>
+              <li>Treatment planning</li>
+              <li>Hands-on models</li>
+            </ul>
+          </div>
+
+          <div class="topic-cell">
+            <h3>Staff and practice building</h3>
+            <ul class="checklist">
+              <li>Patient consultation and treatment plans</li>
+              <li>Patient and referral tracking</li>
+              <li>Surgical treatment coordinator role</li>
+              <li>Staff motivation</li>
+              <li>Color coding for instruments and trays</li>
+              <li>Hands-on models</li>
+            </ul>
+          </div>
+
+          <div class="topic-cell">
+            <h3>Legal</h3>
+            <ul class="checklist">
+              <li>Patient care and the law</li>
+              <li>Legal obligations</li>
+              <li>Risk management</li>
+              <li>Handling malpractice issues</li>
+              <li>Patient records and privacy</li>
+            </ul>
+          </div>
+
+          <div class="topic-cell">
+            <h3>Additional topics</h3>
+            <ul class="checklist">
+              <li>Dental photography and case documentation</li>
+              <li>Marketing the dental practice</li>
+              <li>Social media for your practice</li>
+              <li>Oral pathology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUCCESS STORIES ============ -->
+    <section class="section section-light" id="stories">
+      <div class="container">
+        <div class="section-head">
+          <h2>Success stories</h2>
+          <p class="section-lead">Hear from dentists and team members who took what they learned back to their practices.</p>
+        </div>
+
+        <div id="storyCarousel" class="carousel slide carousel-fade reveal" aria-label="Customer stories">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="story-card">
+                <div class="row g-0">
+                  <div class="col-lg-6 order-2 order-lg-1">
+                    <figure class="story-copy">
+                      <blockquote class="story-quote">
+                        <p>I had taken online implant courses before, but placing on models with the instructor next to me changed everything. Three weeks later I placed my first implant and knew what to do at every step.</p>
+                      </blockquote>
+                      <figcaption><strong>Dr. Mona Sherif</strong><br><span class="text-muted-2">General dentist, Giza</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="media story-media">
+                      <img src="images/story-1.jpg" alt="Portrait of Dr. Mona Sherif" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="story-card">
+                <div class="row g-0">
+                  <div class="col-lg-6 order-2 order-lg-1">
+                    <figure class="story-copy">
+                      <blockquote class="story-quote">
+                        <p>We sent four people from our clinic. The treatment-plan template from the summit is now on every front-desk computer, and patients ask fewer questions about why a plan costs what it does.</p>
+                      </blockquote>
+                      <figcaption><strong>Hala Mostafa</strong><br><span class="text-muted-2">Practice manager, New Cairo</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="media story-media">
+                      <img src="images/story-2.jpg" alt="Portrait of Hala Mostafa" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="story-card">
+                <div class="row g-0">
+                  <div class="col-lg-6 order-2 order-lg-1">
+                    <figure class="story-copy">
+                      <blockquote class="story-quote">
+                        <p>With sixteen people in the room, I got feedback on my own technique instead of watching slides. I still use the sinus elevation checklist every week.</p>
+                      </blockquote>
+                      <figcaption><strong>Dr. Ahmed Reda</strong><br><span class="text-muted-2">Periodontist, Alexandria</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="media story-media">
+                      <img src="images/story-3.jpg" alt="Portrait of Dr. Ahmed Reda" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="story-controls">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Story 1"></button>
+              <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="1" aria-label="Story 2"></button>
+              <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="2" aria-label="Story 3"></button>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="icon-btn" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev" aria-label="Previous story"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+              <button class="icon-btn" type="button" data-bs-target="#storyCarousel" data-bs-slide="next" aria-label="Next story"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO THIS IS FOR ============ -->
+    <section class="section audience" id="audience">
+      <div class="container position-relative">
+        <div class="section-head">
+          <h2>Who this is for</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 reveal reveal--left">
+            <div class="nav flex-column nav-pills" role="tablist" aria-label="Audience">
+              <button class="nav-link active" id="aud-clin-tab" data-bs-toggle="pill" data-bs-target="#aud-clin" type="button" role="tab" aria-controls="aud-clin" aria-selected="true">Clinicians</button>
+              <button class="nav-link" id="aud-mgmt-tab" data-bs-toggle="pill" data-bs-target="#aud-mgmt" type="button" role="tab" aria-controls="aud-mgmt" aria-selected="false">Practice management</button>
+              <button class="nav-link" id="aud-team-tab" data-bs-toggle="pill" data-bs-target="#aud-team" type="button" role="tab" aria-controls="aud-team" aria-selected="false">Team</button>
+            </div>
+          </div>
+          <div class="col-lg-8 reveal reveal--right">
+            <div class="tab-content">
+              <div class="tab-pane fade show active aud-pane" id="aud-clin" role="tabpanel" aria-labelledby="aud-clin-tab" tabindex="0">
+                <h3>Clinicians</h3>
+                <p>Dentists and specialists who want to add or refine implant, restorative, and surgical skills through hands-on practice with expert feedback. After a course, you can:</p>
+                <ul class="checklist">
+                  <li>Plan and place an implant, from consultation to restoration.</li>
+                  <li>Manage common complications before they become emergencies.</li>
+                  <li>Photograph and document cases for referrals and patient records.</li>
+                </ul>
+                <a class="aud-link" href="#events">See clinical courses</a>
+              </div>
+              <div class="tab-pane fade aud-pane" id="aud-mgmt" role="tabpanel" aria-labelledby="aud-mgmt-tab" tabindex="0">
+                <h3>Practice management</h3>
+                <p>Owners and managers who want clearer treatment-plan presentations, better referral tracking, and a stronger team culture. After a course, you can:</p>
+                <ul class="checklist">
+                  <li>Present treatment plans clearly and confidently.</li>
+                  <li>Track every referral and follow up on time.</li>
+                  <li>Run a daily huddle with clear roles for each team member.</li>
+                </ul>
+                <a class="aud-link" href="#events">See management courses</a>
+              </div>
+              <div class="tab-pane fade aud-pane" id="aud-team" role="tabpanel" aria-labelledby="aud-team-tab" tabindex="0">
+                <h3>Team</h3>
+                <p>Hygienists, assistants, and front-desk staff who help patients say yes to care and keep the day running smoothly. After a course, you can:</p>
+                <ul class="checklist">
+                  <li>Explain procedures and costs in plain language.</li>
+                  <li>Prepare rooms, instruments, and models for surgical days.</li>
+                  <li>Handle patient questions and follow-up calls with confidence.</li>
+                </ul>
+                <a class="aud-link" href="#events">See team courses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPEAKERS ============ -->
+    <section class="section" id="speakers">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our speakers</h2>
+          <p class="section-lead">Practicing specialists who teach what they do every day.</p>
+        </div>
+        <div class="row g-4 text-center" data-stagger>
+          <div class="col-6 col-lg-3 reveal speaker-card">
+            <div class="speaker-photo"><span aria-hidden="true">LH</span><img src="images/speaker-1.jpg" alt="Dr. Layla Hassan" loading="lazy"></div>
+            <h3 class="speaker-name">Dr. Layla Hassan</h3>
+            <p class="speaker-role">Implantologist</p>
+            <p class="speaker-focus">Leads the implant surgery courses.</p>
+          </div>
+          <div class="col-6 col-lg-3 reveal speaker-card">
+            <div class="speaker-photo"><span aria-hidden="true">ON</span><img src="images/speaker-2.jpg" alt="Dr. Omar Nabil" loading="lazy"></div>
+            <h3 class="speaker-name">Dr. Omar Nabil</h3>
+            <p class="speaker-role">Periodontist</p>
+            <p class="speaker-focus">Teaches bone grafting and sinus elevation.</p>
+          </div>
+          <div class="col-6 col-lg-3 reveal speaker-card">
+            <div class="speaker-photo"><span aria-hidden="true">SA</span><img src="images/speaker-3.jpg" alt="Dr. Sara Adel" loading="lazy"></div>
+            <h3 class="speaker-name">Dr. Sara Adel</h3>
+            <p class="speaker-role">Prosthodontist</p>
+            <p class="speaker-focus">Teaches digital workflows and full-arch restorations.</p>
+          </div>
+          <div class="col-6 col-lg-3 reveal speaker-card">
+            <div class="speaker-photo"><span aria-hidden="true">KF</span><img src="images/speaker-4.jpg" alt="Dr. Karim Fawzy" loading="lazy"></div>
+            <h3 class="speaker-name">Dr. Karim Fawzy</h3>
+            <p class="speaker-role">Dentist and practice consultant</p>
+            <p class="speaker-focus">Teaches case presentation and practice management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REGISTER (CTA + FORM) ============ -->
+    <section class="section cta" id="register">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal reveal--left">
+            <h2>Reserve your seat</h2>
+            <p class="cta-lead">Send your details and we'll reply within one business day with payment options and venue directions.</p>
+            <ul class="checklist cta-list">
+              <li>Seats are limited to 16 per course.</li>
+              <li>Lunch, workbook, and certificate are included.</li>
+              <li>Register three or more colleagues and save 10%.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 reveal reveal--right">
+            <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) to receive real submissions -->
+            <form class="reg-form needs-validation" id="regForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="fullName">Full name</label>
+                <input class="form-control" id="fullName" name="name" type="text" autocomplete="name" required>
+                <div class="invalid-feedback">Enter your full name.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">Email address</label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+                <div class="invalid-feedback">Enter a valid email address.</div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="eventChoice">Event</label>
+                <select class="form-select" id="eventChoice" name="event" required>
+                  <option value="" selected disabled>Choose an event</option>
+                  <option>Implant Placement Masterclass (Oct 24)</option>
+                  <option>Digital Dentistry Workshop (Nov 14)</option>
+                  <option>Practice Management Summit (Dec 5)</option>
+                </select>
+                <div class="invalid-feedback">Choose the event you want to attend.</div>
+              </div>
+              <button class="btn btn-accent btn-lg w-100" type="submit">Register now</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand d-flex align-items-center gap-2 mb-3" href="#home">
+            <span class="brand-mark" aria-hidden="true">D</span>
+            <span>DentaPro Academy</span>
+          </a>
+          <p class="footer-text">One-day, hands-on courses for dentists, hygienists, and practice teams in Cairo and Alexandria.</p>
+          <ul class="list-unstyled footer-contact">
+            <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+200000000000">+20 000 000 0000</a></li>
+            <li><i class="bi bi-clock" aria-hidden="true"></i> Sunday to Thursday, 9 am to 5 pm</li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Cairo and Alexandria, Egypt</li>
+          </ul>
+          <div class="d-flex gap-3 social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 offset-lg-1">
+          <h3 class="footer-title">Quick links</h3>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h3 class="footer-title">Upcoming events</h3>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#events">Implant Placement Masterclass</a></li>
+            <li><a href="#events">Digital Dentistry Workshop</a></li>
+            <li><a href="#events">Practice Management Summit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <p class="mb-0">&copy; <span id="year">2026</span> DentaPro Academy. Sample project: names and testimonials are fictional.</p>
+        <p class="mb-0"><a href="#">Terms</a> <span aria-hidden="true">&nbsp;|&nbsp;</span> <a href="#">Privacy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp: replace 20XXXXXXXXXX with your number in international format (no + or spaces) -->
+  <a class="wa-float" href="https://wa.me/20XXXXXXXXXX?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20your%20events"
+     target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
